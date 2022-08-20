@@ -1,0 +1,25 @@
+<div class="container-fluid">
+    <div class="row ml-3">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="text-center">
+                    <h1>Entrar</h1>
+                </div>
+                <form [formGroup]="loginForm" (ngSubmit)="login()">
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1">Seu email:</label>
+                      <input formControlName="email" placeholder="E-mail" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <span class="text-danger" *ngIf="loginForm.controls['email'].dirty && loginForm.hasError('required', 'email')">*E-mail obrigatório!</span>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1">Sua senha:</label>
+                      <input formControlName="password" placeholder="Senha" type="password" class="form-control" id="exampleInputPassword1">
+                      <span class="text-danger" *ngIf="loginForm.controls['password'].dirty && loginForm.hasError('required', 'password')">*Senha obrigatória!</span>
+                    </div>
+                    <button type="submit" class="btn btn-primary" >Entrar</button>
+                  </form>
+                  <a href="signupform">Novo usuário? Clique aqui para se cadastrar!</a>
+                </div>
+        </div>
+    </div>
+</div>

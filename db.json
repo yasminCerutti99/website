@@ -1,0 +1,25 @@
+{
+  "users": [
+    {
+      "nome": "joao",
+      "email": "joao@hotmail",
+      "telefone": "556677",
+      "password": "",
+      "id": 1
+    },
+    {
+      "nome": "yasmin",
+      "telefone": "5566",
+      "email": "yas@gmail.com",
+      "password": "123",
+      "id": 2
+    },
+    {
+      "nome": "ana",
+      "telefone": "6656",
+      "email": "ana@gmail.com",
+      "password": "123",
+      "id": 3
+    }
+  ]
+}
